@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="chat.png" type="image/x-icon">
+
+    <!-- Correct link to Material Symbols with rounded icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+    <link rel="stylesheet" href="chat.css">
+    <title>BumbleBee AI</title>
+
+    <style>
+        /* Include this inline styling to ensure icons display properly */
+        .material-symbols-rounded {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48;
+        }
+    </style>
+</head>
+<body>
+    <div class="chatbot-popup">
+        <div class="chat-header">
+            <div class="header-info">
+                <img src="chat.png" alt="image">
+                <h2 class="logo-text">Bumblebee</h2>
+            </div>
+            <!-- Button with arrow drop down icon -->
+            <button id="close-chatbot" class="material-symbols-rounded">arrow_drop_down</button>
+        </div>
+
+        <div class="chat-body">
+            <div class="message bot-message">
+                <img src="chat.png" alt="image">
+                <div class="message-text">Hey friend<br/> How can I help you today?</div>
+            </div>    
+        </div>
+
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea placeholder="Message..." class="message-input" required></textarea>
+                <div class="chat-controls">
+                    <!-- Button with sentiment satisfied icon -->
+                    <button type="button" class="material-symbols-rounded">sentiment_satisfied</button>
+                    <button type="button" class="material-symbols-rounded">attach_file</button>
+                    <button id="send-message" type="submit" class="material-symbols-rounded">arrow_drop_up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
